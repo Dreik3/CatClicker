@@ -1,5 +1,4 @@
 var allCatList = $(".list");
-var catFromList = $("li");
 var areaForCats = $('.area');
 //constructor for cats
 function Cat(name, image) {
@@ -10,18 +9,19 @@ function Cat(name, image) {
 }
 var catsArray = [];
 //initializing cats
-catsArray[0] = new Cat("Eddy", "images/cat1.jpg");
-catsArray[1] = new Cat("Diana", "images/cat2.jpg");
-catsArray[2] = new Cat("Baron", "images/cat3.jpeg");
-catsArray[3] = new Cat("Liza", "images/cat4.jpeg");
-catsArray[4] = new Cat("Ksenia", "images/cat5.jpg");
+catsArray.push(new Cat("Eddy", "images/cat1.jpg"));
+catsArray.push(new Cat("Diana", "images/cat2.jpg"));
+catsArray.push(new Cat("Baron", "images/cat3.jpeg"));
+catsArray.push(new Cat("Liza", "images/cat4.jpeg"));
+catsArray.push(new Cat("Ksenia", "images/cat5.jpg"));
 console.log(catsArray);
 // add all our cats in array
 
 catsArray.forEach(function(cat, i, catsArray){
-    allCatList.append("<li id='" + i + "'><a href='#'>" + catsArray[i].name + "</a></li>");
+    allCatList.append(`<li id="${i}"><a href='#'>${catsArray[i].name}</a></li>`);
 });
 // array for cats which we clicked
+var catFromList = $("li");
 
 var chosenArray = [];
 catFromList.click(function(){
