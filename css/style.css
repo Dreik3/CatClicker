@@ -1,13 +1,33 @@
 body {
+    width: 95%;
     text-align: center;
     display: inline-block;
     margin-left: 50px;
+    background-color: pink;
 }
-
+h1 {
+    font-size: 50px;
+    text-align: center;
+}
 .cats {
+    text-align: center;
     width:300;
     display: inline-block;
     height:400px;
     margin-left: 30px;
-    margin-bottom: 10px;
+    padding-bottom: 30px;
+}
+.list {
+    text-align: left;
+    font-size: 25px;
+}
+.area {
+    background-color: #951884;
+    text-align: center;
+}
+h2 {
+    font-size: 40px;
+}
+p {
+    font-size: 25px;
 }
