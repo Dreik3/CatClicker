@@ -1,0 +1,13 @@
+body {
+    text-align: center;
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.cats {
+    width:300;
+    display: inline-block;
+    height:400px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
