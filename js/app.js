@@ -37,11 +37,6 @@ var view = {
     createList: (cat) => {
         allCatList.append(`<li><a href='#'  id="${cat.id}" >${cat.name}</a>  </li>`);
     },
-    choseCat: () => {
-        allCatList.click(function(){
-
-        })
-    },
     renderCat: (cat) => {
         areaForCats.html('');
         areaForCats.append(`<div class='cats' id='cat${cat.id}'></div>`);
